@@ -2,6 +2,7 @@ import express from "express";
 import { config } from "dotenv";
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
+const cors = require("cors");
 
 import userRoutes from "./routes/users.js";
 import authRoutes from "./routes/auths.js";
@@ -9,6 +10,7 @@ import tweetRoutes from "./routes/tweets.js";
 config();
 
 const app = express();
+app.use(cors());
 
 const connect = () => {
 	mongoose.set("strictQuery", false);

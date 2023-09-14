@@ -24,7 +24,7 @@ router.put("/:id/like", likeOrDislike);
 // get all timeline tweets
 router.get("/timeline/:id", getAllTweets);
 // Update Tweet
-router.put("/:id", update);
+router.put("/:id", updateTweet);
 // get user Tweets only
 router.get("/user/all/:id", getUserTweets);
 

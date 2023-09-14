@@ -7,6 +7,7 @@ import {
 	getAllTweets,
 	getUserTweets,
 	getExploreTweets,
+	updateTweet,
 } from "../controllers/tweet.js";
 
 const router = express.Router();
@@ -22,7 +23,8 @@ router.put("/:id/like", likeOrDislike);
 
 // get all timeline tweets
 router.get("/timeline/:id", getAllTweets);
-
+// Update Tweet
+router.put("/:id", update);
 // get user Tweets only
 router.get("/user/all/:id", getUserTweets);
 

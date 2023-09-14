@@ -25,7 +25,7 @@ export const deleteTweet = async (req, res, next) => {
 	}
 };
 
-export const updateTweets = async (req, res, next) => {
+export const updateTweet = async (req, res, next) => {
 	const { id } = req.params;
 	const { userId, description } = req.body;
 	try {

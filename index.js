@@ -8,7 +8,7 @@ import authRoutes from "./routes/auths.js";
 import tweetRoutes from "./routes/tweets.js";
 
 const app = express();
-require("dotenv").config();
+dotenv.config();
 
 const connect = () => {
 	mongoose.set("strictQuery", false);
